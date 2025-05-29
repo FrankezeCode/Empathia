@@ -7,11 +7,11 @@
   /* Base Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* Font Family */
-  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-sans: var(--font-inter), system-ui, sans-serif;
 
   /* Box Shadows */
   --shadow-soft: 0 2px 15px rgba(0, 0, 0, 0.05);
@@ -113,11 +113,11 @@
   --radius: 0.625rem;
   
   /* Primary Colors */
-  --primary-50: oklch(0.95 0.05 183); /* #E6F2F1 */
+  --primary-50: oklch(0.9519 0.0128 190.96); /* #E6F2F1 */
   --primary-100: oklch(0.9 0.05 183); /* #CCE5E3 */
   --primary-200: oklch(0.85 0.05 183); /* #99CBC7 */
-  --primary-300: oklch(0.8 0.05 183); /* #66B1AB */
-  --primary-400: oklch(0.7 0.05 183); /* #33978F */
+  --primary-300: oklch(0.71 0.0756 188.99); /* #66B1AB */
+  --primary-400: oklch(0.6172 0.0916 187.51); /* #33978F */
   --primary-500: oklch(0.6304 0.1013 183.03); /* #2A9D8F */ 
   --primary-600: oklch(0.6 0.1 183); /* #217E73 */
   --primary-700: oklch(0.55 0.1 183); /* #195E56 */
@@ -133,31 +133,31 @@
   --secondary-500: oklch(0.6 0.15 270); /* #6C5EBF */
   --secondary-600: oklch(0.4633 0.1227 287.06); /* #564B99 */
   --secondary-700: oklch(0.5 0.15 270); /* #413873 */
-  --secondary-800: oklch(0.45 0.15 270); /* #2B254C */
+  --secondary-800: oklch(0.2923 0.0693 288.41); /* #2B254C */
   --secondary-900: oklch(0.4 0.15 270); /* #151226 */
 
   /* Accent Colors */
   --accent-50: oklch(0.98 0.05 40); /* #FEF4EC */
   --accent-100: oklch(0.96 0.05 40); /* #FDE9D9 */
   --accent-200: oklch(0.94 0.05 40); /* #FBD3B3 */
-  --accent-300: oklch(0.92 0.05 40); /* #F9BE8D */
+  --accent-300: oklch(0.8439 0.0933 60.76); /* #F9BE8D */
   --accent-400: oklch(0.85 0.1 40); /* #F4A261 */
-  --accent-500: oklch(0.7 0.15 40); /* #F08337 */
+  --accent-500: oklch(0.7185 0.1591 51.73); /* #F08337 */
   --accent-600: oklch(0.65 0.15 40); /* #C0682C */
   --accent-700: oklch(0.6 0.15 40); /* #904E21 */
   --accent-800: oklch(0.55 0.15 40); /* #603416 */
   --accent-900: oklch(0.5 0.15 40); /* #301A0B */
 
   /* Neutral Colors */
-  --neutral-50: oklch(0.98 0 0); /* #F9FAFB */
+  --neutral-50: oklch(0.9846 0.0017 247.84); /* #F9FAFB */
   --neutral-100: oklch(0.95 0 0); /* #F3F4F6 */
   --neutral-200: oklch(0.9 0 0); /* #E5E7EB */
   --neutral-300: oklch(0.85 0 0); /* #D1D5DB */
-  --neutral-400: oklch(0.7 0 0); /* #9CA3AF */
-  --neutral-500: oklch(0.6 0 0); /* #6B7280 */
-  --neutral-600: oklch(0.55 0 0); /* #4B5563 */
-  --neutral-700: oklch(0.5 0 0); /* #374151 */
-  --neutral-800: oklch(0.3 0 0); /* #1F2937 */
+  --neutral-400: oklch(0.7137 0.0192 261.32); /* #9CA3AF */
+  --neutral-500: oklch(0.551 0.0234 264.36); /* #6B7280 */
+  --neutral-600: oklch(0.4461 0.0263 256.8); /* #4B5563 */
+  --neutral-700: oklch(0.3729 0.0306 259.73); /* #374151 */
+  --neutral-800: oklch(0.2781 0.0296 256.85); /* #1F2937 */
   --neutral-900: oklch(0.2 0 0); /* #111827 */
 
   /* Status Colors */

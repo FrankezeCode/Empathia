@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -25,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   type = 'button',
   icon,
   iconPosition = 'left',
+  className,
 }) => {
   const baseStyles = 'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
   
@@ -32,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
     primary: 'bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500',
     secondary: 'bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-secondary-500',
     accent: 'bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500',
-    outline: 'bg-transparent border border-neutral-300 text-neutral-700 hover:bg-neutral-50 focus:ring-neutral-500',
+    outline: 'bg-neutral-50 border border-neutral-300 text-neutral-700 hover:bg-neutral-200 focus:ring-neutral-500',
     ghost: 'bg-transparent text-neutral-700 hover:bg-neutral-100 focus:ring-neutral-500',
   };
   
@@ -53,7 +56,14 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       onClick={onClick}
       disabled={isDisabled || isLoading}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${disabledStyles} ${widthStyles}`}
+      className={cn(
+        baseStyles,
+        variantStyles[variant],
+        sizeStyles[size],
+        disabledStyles,
+        widthStyles,
+        className
+      )}
       whileTap={{ scale: isDisabled || isLoading ? 1 : 0.98 }}
     >
       {isLoading ? (
